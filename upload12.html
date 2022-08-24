@@ -1,0 +1,43 @@
+<!DOCT html>
+<html>
+<head><h2>upload image</h2> </head>
+<body style="background-color:lightgreen;" >
+<form>
+Name:<input type="text" name="name" required ><br><br>
+Email:<input type="email" name="email" required><br><br>
+password:<input type ="password" name="psswrd "required><br><br>
+<strong>upload resume</strong><br>
+<input type="file" name="img"><br><br>
+<input type="submit"</input><br><br>
+<input type="reset"><br>
+
+&nbspfemale<input type="checkbox"name="gender"onclick="return myfun()"><br>
+&nbsp&nbspmale<input type="checkbox"name="gender"onclick="return myfun()"><br><br>
+
+    <div>
+    <span value="not valid"> </span>
+     </div>
+<script type="text">
+  function myfun()
+{
+var a=document.getelementBy Name('gender');
+var new var=0;
+var count;
+for(count=0;count<a.length;count++)
+  {
+   if(a[count].checked==true)
+      {
+        new var=new var+1;
+        }
+     if(new var>=2)
+        {
+      document.getelementBy value('not valid').innerHTML="please select either male or female";
+         }
+
+returen false;
+}
+</script>
+</form>
+</body>
+</html>
+
